@@ -227,9 +227,9 @@ LevelSelect_Controls:
 		bra.s	.getspecialstage						; 0
 
 .return
-		rts									; nop
+		rts									; align
 		bra.s	.getcharacter							; 4
-		rts									; nop
+		rts									; align
 		bra.w	.getmusic							; 8
 		bra.w	.getsound							; C
 
@@ -521,13 +521,13 @@ LevelSelect_MarkFields:
 		bra.s	LevelSelect_LoadSpecialStage					; 0
 
 .return
-		rts									; nop
+		rts									; align
 		bra.s	LevelSelect_LoadCharacter					; 4
-		rts									; nop
+		rts									; align
 		bra.s	.drawmusic							; 8
-		rts									; nop
+		rts									; align
 		bra.s	.drawsound							; C
-		rts									; nop
+		rts									; align
 
 ; ---------------------------------------------------------------------------
 ; Draw sample
